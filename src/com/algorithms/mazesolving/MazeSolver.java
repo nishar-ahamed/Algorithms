@@ -46,7 +46,7 @@ public class MazeSolver {
     }
 
     public static void main(String[] args) {
-        FileReader fileReader = new FileReader("/home/darkelement/Documents/Maze.txt", 14, 14);
+        FileReader fileReader = new FileReader("/location/to/your/matrix/txt/file", 14, 14);
         fileReader.parseFile();
         MazeSolver mazeSolver = new MazeSolver(fileReader.getMap(), fileReader.getStartPositionRow(), fileReader.getStartPositionColumn());
         mazeSolver.findWayOut();
